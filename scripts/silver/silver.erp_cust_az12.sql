@@ -1,4 +1,11 @@
-INSERT INTO silver.erp_cust_az12 (
+CREATE TABLE silver.erp_cust_az12 (
+    cid NVARCHAR(50),
+    gen NVARCHAR(50),
+    bdate DATE,
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
+)
+
+INSERT INTO silver.erp_cust_az12(
     cid,
     bdate,
     gen
